@@ -1,0 +1,236 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.D {
+	max-width: 800px;
+	background-color: rgba(255,255,255,1);
+	margin: auto;
+}
+
+@media screen and (max-width: 414px){
+	#ground img{
+		width: 100%;
+	}
+
+	.D{
+		width: 100%;
+		margin: 0;
+	}
+
+	.sheet{
+		width: 100%;
+	}
+
+	.form-group{
+		padding: 0 30px;
+	}
+
+	/*.tree_item{
+		max-width:	90px;
+		max-height: 90px;
+	}*/
+
+	.tree{
+
+	}
+
+
+}
+
+
+#ground .ground {
+	/*background-image: url("../img/ground.png");*/
+	/* background-color: aliceblue; */
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center;
+	height: 100%;
+	width: 100%;	
+	/*min-width: 450px;*/
+	
+
+}
+
+#ground{
+	margin: auto;
+	position: relative;
+	display: block;
+	/*padding-top: 30px;*/
+	max-width: 400px;
+	height: 430px;
+}
+
+
+.tree_item .tree_pitcher{
+	width: 150px;
+	height: 150px;
+}
+
+.tree{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+#t_1 {
+	position: absolute;
+	top:5%;
+	left: 31%;
+}
+#t_2 {
+	position: absolute;
+	top:13%;
+	left: 31%;
+}
+#t_3 {
+	position: absolute;
+	top:23%;
+	left: 31%;
+}
+
+#t_4 {
+	position: absolute;
+	top:33%;
+	left: 31%;
+}
+
+#t_5 {
+	position: absolute;
+	top:44%;
+	left: 31%;
+}
+#t_6 {
+	position: absolute;
+	top:11%;
+	left: 21%;
+}
+#t_7 {
+	position: absolute;
+	top:21%;
+	left: 21%;
+}
+#t_8 {
+	position: absolute;
+	top:31%;
+	left: 21%;
+}
+#t_9 {
+	position: absolute;
+	top:41%;
+	left: 21%;
+}
+#t_10 {
+	position: absolute;
+	top:17%;
+	left: 12%;
+}
+#t_11 {
+	position: absolute;
+	top:27%;
+	left: 12%;
+}
+#t_12 {
+	position: absolute;
+	top:37%;
+	left: 12%;
+}
+#t_13 {
+	position: absolute;
+	top:20%;
+	left: 3%;
+}
+#t_14 {
+	position: absolute;
+	top:31%;
+	left: 3%;
+}
+#t_15 {
+	position: absolute;
+	top:26%;
+	left: -7%;
+}
+#t_16 {
+	position: absolute;
+	top:9%;
+	left: 40%;
+}
+#t_17 {
+	position: absolute;
+	top:20%;
+	left: 40%;
+}
+#t_18 {
+	position: absolute;
+	top:30%;
+	left: 40%;
+}
+#t_19 {
+	position: absolute;
+	top:40%;
+	left: 40%;
+}
+#t_20 {
+	position: absolute;
+	top:15%;
+	left: 49%;
+}
+#t_21 {
+	position: absolute;
+	top:25%;
+	left: 49%;
+}
+#t_22 {
+	position: absolute;
+	top:35%;
+	left: 49%;
+}
+#t_23 {
+	position: absolute;
+	top:20%;
+	left: 58%;
+}
+#t_24 {
+	position: absolute;
+	top:30%;
+	left: 58%;
+}
+#t_25 {
+	position: absolute;
+	top:26%;
+	left: 70%;
+}
+
+#sheet{
+	margin: 5px auto;
+	max-width: 630px;
+}
+
+#sheet h3{
+	text-align: center;
+	padding: 5px;	
+	margin: auto;
+}
+
+.form-control{
+	margin: 5px auto;
+
+}
+
+.wrap-about{
+	max-width: 650px;
+	margin: auto;
+}
+
+.about h3{
+	text-align: center;
+	color: brown;
+	font-size: 35px;
+}
+
+.about p{
+	text-align: center;
+}
