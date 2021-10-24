@@ -4,36 +4,10 @@
 	padding: 0;
 }
 .D {
-	max-width: 800px;
+	max-width: 1200px;
+	width: 100%;
 	background-color: #FFECDD;
 	margin: auto;
-}
-
-@media screen and (max-width: 414px){
-	#ground img{
-		width: 100%;
-	}
-
-	.D{
-		width: 100%;
-		margin: 0;
-	}
-
-	.sheet{
-		width: 100%;
-	}
-
-	.form-group{
-		padding: 0 30px;
-	}
-
-	/*.tree_item{
-		max-width:	90px;
-		max-height: 90px;
-	}*/
-
-
-
 }
 
 
@@ -55,8 +29,7 @@
 	position: relative;
 	display: block;
 	/*padding-top: 30px;*/
-	max-width: 400px;
-	min-width: 370px;
+	width: 370px;
 	height: 430px;
 }
 
@@ -201,6 +174,35 @@
 	top:26%;
 	left: 70%;
 }
+
+@media screen and (max-width: 414px){
+	#ground img{
+		width: 100%;
+	}
+
+	.D{
+		width: 100%;
+		margin: 0;
+	}
+
+	.sheet{
+		width: 100%;
+	}
+
+	.form-group{
+		padding: 0 30px;
+	}
+
+	/*.tree_item{
+		max-width:	90px;
+		max-height: 90px;
+	}*/
+
+}
+
+
+
+
 
 #sheet{
 	margin: 5px auto;
