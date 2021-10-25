@@ -1,6 +1,6 @@
 for(let i = 1; i <= 25; i++)
 {
-	var x = Math.floor(Math.random()*3)+1;
+	var x = Math.floor(Math.random()*2)+2;
 	var back = `<div id="t_${i}" class="tree_item" >
 					<img class="tree_pitcher" src="./img/tree${x}.png">
 				</div>`;
