@@ -122,10 +122,10 @@
 .rwd_slider_container {
   position: relative;
   display: block;
-  height: 0;
+  height: 100%;
   padding: 0;
   overflow: hidden;
-  padding-bottom: 100%;
+  /* padding-bottom: 100%; */
   box-sizing: border-box;
 }
 .rwd_slider_container .slider_container {

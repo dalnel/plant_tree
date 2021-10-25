@@ -6,7 +6,7 @@
 .D {
 	max-width: 1200px;
 	width: 100%;
-	background-color: #FFECDD;
+	background-color: #FFECDC;
 	margin: auto;
 }
 
@@ -41,7 +41,7 @@
 
 .tree_item .tree_pitcher{
 	width: 100%;
-	height: 100%;
+	height: 150px;
 }
 
 .tree{
