@@ -1,0 +1,23 @@
+body{
+	font-family:sans-serif;
+	font-size:1em;
+}
+
+ .counter-wrap{
+	margin: auto;
+	width: 100%;
+	background-color: #42210B;
+	border: 2px solid #fff;
+	box-shadow:  0 0 0 5px #42210B;
+} 
+
+.counter-wrap h1{
+	color: #fff;
+	text-align: center;
+}
+
+.counter-wrap h3{
+	color: #fff;
+	text-align: center;
+	padding-bottom: 15px;
+}

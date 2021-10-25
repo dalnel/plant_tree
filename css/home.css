@@ -29,7 +29,7 @@
 	position: relative;
 	display: block;
 	/*padding-top: 30px;*/
-	width: 370px;
+	width: 360px;
 	height: 430px;
 }
 
@@ -177,13 +177,13 @@
 #t_25 {
 	position: absolute;
 	top:26%;
-	left: 70%;
+	left: 69%;
 }
 
 @media screen and (max-width: 414px){
-	#ground img{
+/* 	#ground img{
 		width: 100%;
-	}
+	} */
 
 	.D{
 		width: 100%;
@@ -198,10 +198,138 @@
 		padding: 0 30px;
 	}
 
-	/*.tree_item{
-		max-width:	90px;
-		max-height: 90px;
-	}*/
+	.tree_item{
+		max-width:	110px;
+		max-height: 110px;
+	}
+
+	#t_1 {
+		position: absolute;
+		top:5%;
+		left: 33%;
+	}
+	#t_2 {
+		position: absolute;
+		top:13%;
+		left: 33%;
+	}
+	#t_3 {
+		position: absolute;
+		top:23%;
+		left: 33%;
+	}
+	
+	#t_4 {
+		position: absolute;
+		top:33%;
+		left: 33%;
+	}
+	
+	#t_5 {
+		position: absolute;
+		top:44%;
+		left: 33%;
+	}
+	#t_6 {
+		position: absolute;
+		top:11%;
+		left: 24%;
+	}
+	#t_7 {
+		position: absolute;
+		top:21%;
+		left: 24%;
+	}
+	#t_8 {
+		position: absolute;
+		top:31%;
+		left: 24%;
+	}
+	#t_9 {
+		position: absolute;
+		top:41%;
+		left: 24%;
+	}
+	#t_10 {
+		position: absolute;
+		top:17%;
+		left: 16%;
+	}
+	#t_11 {
+		position: absolute;
+		top:27%;
+		left: 16%;
+	}
+	#t_12 {
+		position: absolute;
+		top:37%;
+		left: 16%;
+	}
+	#t_13 {
+		position: absolute;
+		top:20%;
+		left: 7%;
+	}
+	#t_14 {
+		position: absolute;
+		top:31%;
+		left: 7%;
+	}
+	#t_15 {
+		position: absolute;
+		top:26%;
+		left: -3%;
+	}
+	#t_16 {
+		position: absolute;
+		top:9%;
+		left: 43%;
+	}
+	#t_17 {
+		position: absolute;
+		top:20%;
+		left: 43%;
+	}
+	#t_18 {
+		position: absolute;
+		top:30%;
+		left: 43%;
+	}
+	#t_19 {
+		position: absolute;
+		top:40%;
+		left: 43%;
+	}
+	#t_20 {
+		position: absolute;
+		top:15%;
+		left: 52%;
+	}
+	#t_21 {
+		position: absolute;
+		top:25%;
+		left: 52%;
+	}
+	#t_22 {
+		position: absolute;
+		top:35%;
+		left: 52%;
+	}
+	#t_23 {
+		position: absolute;
+		top:20%;
+		left: 60%;
+	}
+	#t_24 {
+		position: absolute;
+		top:30%;
+		left: 60%;
+	}
+	#t_25 {
+		position: absolute;
+		top:26%;
+		left: 70%;
+	}
 
 }
 
