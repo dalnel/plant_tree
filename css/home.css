@@ -1,3 +1,9 @@
+@font-face {
+	font-family: GenSekiGothicTW;
+	src: url('../genseki-font-master/ttc/GenSekiGothicTW-B.ttf') ;
+  }
+
+
 
 * {
 	margin: 0;
@@ -354,6 +360,9 @@
 }
 
 .wrap-about{
+	font-family: GenSekiGothicTW;
+	line-height: 30px;
+	letter-spacing: 3px;
 	max-width: 650px;
 	margin: auto;
 }
@@ -436,12 +445,22 @@
 	border-left: 10px solid #CED9B1;
   }
 
+.icon{
+	background-image: url('../img/icon.png');
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center;
+	/* background-color: blue; */
+	height: 30px;
+	width: 30px;
+}
+
   .event{
 	display: flex;
 	margin: 10px 10px;
   }
   .event-text{
-	  margin-left: 10px;
+	  margin-left: -3px;
   }
   .event-text p{
 	margin-left: 10px;
