@@ -9,6 +9,11 @@
 	margin: 0;
 	padding: 0;
 }
+
+body{
+	background-color: #FFECDC;
+}
+
 .D {
 	max-width: 1200px;
 	width: 100%;
@@ -576,4 +581,28 @@
 }
 .event-text b{
 	color: #3F2109;
+}
+
+.footer{
+	display: flex;
+	margin-top: 15px;
+	height: 60px;
+	width: 100%;
+	background-color: #42210B;
+	color: #fff;
+	justify-content: center;
+	/* text-align: center;*/ 
+
+}
+
+.footer h3{
+	padding-top: 20px;
+	text-align: center;
+}
+
+.footer a{
+	text-decoration:none;
+	margin: auto 20px;
+	text-align: center;
+	color: #fff;
 }
