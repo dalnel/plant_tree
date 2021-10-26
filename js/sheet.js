@@ -8,14 +8,23 @@ $('#send').click(function()
         email: $('#email').val(),
         message: $('#message').val()
     };*/
-    $.ajax({
-        type: 'GET',
-        url: 'https://script.google.com/macros/s/AKfycbwtNznktobvXCv_WYVaFt5pMQCPymeJd_t4GXn61M1yloE2tUeCLCRb1EALSqPm_tzUTA/exec' ,
-        data: {
-            "number": $('#number').val(),
-            "name": $('#name').val(),
-            "message": $('#message').val()
-        } ,
-        success: alert("success") ,
-});
+    console.log($('#name').val());
+
+    if($('#number').val() == "" && $('#name').val() == "" )
+    {
+        alert("姓名及今天要種多少樹為必填選項");
+    }
+    else{
+        $.ajax({
+            type: 'GET',
+            url: 'https://script.google.com/macros/s/AKfycbwtNznktobvXCv_WYVaFt5pMQCPymeJd_t4GXn61M1yloE2tUeCLCRb1EALSqPm_tzUTA/exec' ,
+            data: {
+                "number": $('#number').val(),
+                "name": $('#name').val(),
+                "message": $('#message').val()
+            } ,
+            success: alert("success") ,
+        });
+    }
+
 });
