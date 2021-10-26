@@ -1,0 +1,53 @@
+@font-face {
+	font-family: GenSekiGothicTW;
+	src: url('../genseki-font-master/ttc/GenSekiGothicTW-B.ttf') ;
+  }
+
+.plant-button{
+    font-family: GenSekiGothicTW;;
+    z-index: 3;
+    position: absolute;
+    color: #fff;
+	width: 90px;
+    height: 90px;
+	background-color: #42210B;
+	border: 2px solid #fff;
+    border-radius: 3px;
+	box-shadow:  0 0 0 5px #42210B;
+}
+
+.D{
+    position: relative;
+}
+
+.long{
+
+    text-align: center;
+    width: 50px;
+    height: 130px;
+    border-radius: 10%;
+    display: block;
+    
+}
+
+.long p{
+    writing-mode: vertical-lr;
+    margin: auto; 
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+#pb1{
+    top: 8%;
+    right: 26%;
+}
+
+#pb2{
+    top: 0;
+    right: 0;
+}
+
+#pb3{
+    top: 0;
+    right: 0;
+}

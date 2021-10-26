@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="./css/Carousel.css">
 <link rel="stylesheet" href="./css/BackToTop.css">
 <link rel="stylesheet" href="./css/counter.css">
+<link rel="stylesheet" href="./css/PlantTreeButton.css">
 </head>
 <body>
 
@@ -27,13 +28,15 @@
 				<span>menu</span>
 			</label>					
 			<div class="header-item-wrap">
-				<a class="header-item">關於我們</a>
-				<a class="header-item">活動起源</a>
-				<a class="header-item">活動內容</a>
-				<a class="header-item">活動照片</a>
+				<a class="header-item" href="#about">關於我們</a>
+				<a class="header-item" href="#concept">活動起源</a>
+				<a class="header-item" href="#event-content">活動內容</a>
+				<a class="header-item" href="#event-photo">活動照片</a>
 			</div>
 		</div>
 
+
+		<button type="button" name="plantButton" class="plant-button long" id="pb1"><p>我想種樹</p></button>
 
 		<div id="ground">
 			<img class="ground" src="./img/ground.png">
@@ -72,10 +75,11 @@
 		</div>
 
 
-
+		<!-- <input type="button" value="我想種樹" name="plantButton" class="plant-button round" id="pb2"> -->
+		
 		<div class="wrap-about">
 			<div class="about">
-				<p class="separator"><span>活動起源<br/>CONCEPT</span></p>
+				<p class="separator" id="concept"><span>活動起源<br/>CONCEPT</span></p>
 				<div class="content">
 					<p>
 						蔬食(Vegan)在全世界已經形成一種風氣、潮流甚至演進出文化，每位成為蔬食者的理由不盡相同，可能因為宗教信仰、環保意識、身體健康甚至是祈福還願，但全部的蔬食者都有一個共通點，就是不願傷害動物。
@@ -87,8 +91,10 @@
 				</div>
 			</div>
 
+			<!-- <input type="button" value="我想種樹" name="plantButton" class="plant-button round" id="pb3"> -->
+
 			<div class="about">
-				<p class="separator"><span>關於我們<br/>ABOUT</span></p>
+				<p class="separator" id="about"><span>關於我們<br/>ABOUT</span></p>
 				<div class="content">
 					<p>
 						台灣的大學中，大多都有推動蔬食文化性質的社團，我們是集合逢甲大學、靜宜大學、勤益科技大學、東海大學、彰化師範大學、大葉大學、建國科技大學、嶺東科技大學、僑光科技大學、弘光科技大學等10所大學的「崇德青年社」共同合作，舉辦這次的活動。
@@ -106,7 +112,7 @@
 
 
 		<div class="wrap-about">
-			<p class="separator"><span>活動照片<br/>RECORDS</span></p>
+			<p class="separator" id="event-photo"><span>活動照片<br/>RECORDS</span></p>
 		</div>
 
 	<div class="rwd_slider_container_wrapper">
@@ -136,7 +142,7 @@
 
 
 	<div class="wrap-about">
-		<p class="separator"><span>活動內容<br/>CONTENT</span></p>
+		<p class="separator" id="event-content"><span>活動內容<br/>CONTENT</span></p>
 
 		<div class="event">
 			<div class="event-icon">
@@ -238,9 +244,10 @@
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="./css/home.css"/>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="./js/jquery.counterup.min.js"></script>
-<script id="applicationScript" type="text/javascript" src="./js/home.js"></script>
+<script type="text/javascript" src="./js/home.js"></script>
 <script type="text/javascript" src="./js/script.js"></script>
 <script type="text/javascript" src="./js/sheet.js"></script>
 <script type="text/javascript" src="./js/BackToTop.js"></script>
+<script type="text/javascript" src="./js/goToSheet.js"></script>
 </body>
 </html>

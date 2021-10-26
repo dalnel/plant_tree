@@ -51,6 +51,10 @@
 	margin: auto 10px;
 }
 
+.header-item-wrap a{
+	text-decoration:none;
+}
+
 .header-item{
 	font-family: GenSekiGothicTW;
 	font-size: 20px;

@@ -27,5 +27,9 @@ $(function () {
     $('html, body').animate({scrollTop: 0}, 200);
     
     });
-    
+
+    $("#send").click(function(){
+        $('html, body').animate({scrollTop: 0}, 200);
+    })
+
     });
