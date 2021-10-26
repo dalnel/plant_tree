@@ -1,6 +1,6 @@
 @font-face {
 	font-family: GenSekiGothicTW;
-	src: url('../genseki-font-master/ttc/GenSekiGothicTW-B.ttf') ;
+	src: url('../genseki-font-master/ttc/GenSekiGothicTW-L.ttf') ;
   }
 
 
@@ -296,13 +296,19 @@
 		left: 0;
 	}
 
+
+	.content{
+		margin-left: 10px;
+	  }
+
 	.sheet{
 		width: 100%;
 	}
 
-	.form-group{
-		padding: 0 30px;
-	}
+/* 	.form-group{
+		width: 225px;
+		margin: auto;
+	} */
 
 	.tree_item{
 		max-width:	110px;
@@ -455,8 +461,15 @@
 }
 
 .form-control{
-	margin: 5px auto;
+	font-family: GenSekiGothicTW;
+	/* margin: 5px auto; */
+	padding: 5px 50px;
 
+}
+
+.form-group{
+	width: 320px;
+	margin: auto;
 }
 
 .wrap-about{
@@ -541,7 +554,7 @@
   }
 
   .content{
-	margin: 10px 0;
+	margin: 10px;
 	border-left: 10px solid #CED9B1;
   }
 
