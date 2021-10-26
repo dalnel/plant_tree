@@ -42,7 +42,7 @@
 
 #pb1{
     top: 8%;
-    right: 26%;
+    right: calc(100vw - 80%);
 }
 
 #pb2{
