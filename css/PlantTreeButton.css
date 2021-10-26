@@ -16,9 +16,12 @@
 	box-shadow:  0 0 0 5px #42210B;
 }
 
+
 .D{
     position: relative;
 }
+
+
 
 .long{
 
@@ -50,4 +53,25 @@
 #pb3{
     top: 0;
     right: 0;
+}
+
+@media screen and (max-width: 414px) {
+    
+    .plant-button{
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+    }
+
+    .long p{
+        padding: 5px;
+        margin: auto; 
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    #pb1{
+        top: 12.5%;
+        right: 5%;
+    }
 }
