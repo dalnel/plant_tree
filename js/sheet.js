@@ -10,7 +10,7 @@ $('#send').click(function()
     };*/
     console.log($('#name').val());
 
-    if($('#number').val() == "" && $('#name').val() == "" )
+    if($('#number').val() == "" || $('#name').val() == "" )
     {
         alert("姓名及今天要種多少樹為必填選項");
     }
