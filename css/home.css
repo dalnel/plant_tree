@@ -45,6 +45,7 @@
 
 .header-item-wrap{
 	/* display: flex; */
+	font-family: GenSekiGothicTW;
 	width: auto;
 	height: auto;
 	margin: auto 10px;
@@ -460,17 +461,7 @@
 	margin: auto;
 }
 
-.form-control{
-	font-family: GenSekiGothicTW;
-	/* margin: 5px auto; */
-	padding: 5px 50px;
 
-}
-
-.form-group{
-	width: 320px;
-	margin: auto;
-}
 
 .wrap-about{
 	font-family: GenSekiGothicTW;

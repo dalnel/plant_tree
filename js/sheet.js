@@ -10,10 +10,10 @@ $('#send').click(function()
     };*/
     $.ajax({
         type: 'GET',
-        url: 'https://script.google.com/macros/s/AKfycbwXisa0mbk-OCXJY1EusPQO7scn0is5pucdGJVTyzlLxyBTuP8F2QTXsB98kxMvSbs-UA/exec' ,
+        url: 'https://script.google.com/macros/s/AKfycbwtNznktobvXCv_WYVaFt5pMQCPymeJd_t4GXn61M1yloE2tUeCLCRb1EALSqPm_tzUTA/exec' ,
         data: {
+            "number": $('#number').val(),
             "name": $('#name').val(),
-            "email": $('#email').val(),
             "message": $('#message').val()
         } ,
         success: alert("success") ,

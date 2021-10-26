@@ -1,12 +1,12 @@
 var now;
 async function g() {
   let b;
-  await $.get('https://sheets.googleapis.com/v4/spreadsheets/14FrUfLE3xbuDsA-Rl_KIuM5R4uppq3UUHaDbTIPFKXc/values/表單回應 1?alt=json&key=AIzaSyDGlxykUKY26SpbfBpqWJ6hocy8bAsPebM',
+  await $.get('https://sheets.googleapis.com/v4/spreadsheets/1KyWaif2kgtYdAaq19NeCSCaBLw9lFwBxeU1c4PjSZFc/values/工作表1?alt=json&key=AIzaSyB2THJcAZdxTm50s8QO7-nfOCmE0fe_fq0',
     function (data) {
-      let a = parseInt(data.values[1][2], 10);
+      let a = parseInt(data.values[0][3], 10);
       b = a;
     });
-  //console.log(b);
+  console.log(b);
 
   let gold, red, green, temp;
   temp = b;
@@ -67,4 +67,4 @@ function farm() {
   $( document ).ready(function(){
       farm();
   })
-/* setInterval(farm, 60000); */
+ setInterval(farm, 5000); 
