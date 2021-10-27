@@ -8,7 +8,6 @@ $('#send').click(function()
         email: $('#email').val(),
         message: $('#message').val()
     };*/
-    console.log($('#name').val());
 
     if($('#number').val() == "" || $('#name').val() == "" )
     {
