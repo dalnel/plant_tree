@@ -22,10 +22,15 @@ async function g() {
     red = parseInt(temp / 10);
     temp = temp - (red * 10);
   }
+  else{
+    red = 0;
+  }
+  
   green = temp;
 
   return new Promise(function (resolve) {
     let array = [b, gold, red, green]
+    console.log(array);
     resolve(array);
   })
 }

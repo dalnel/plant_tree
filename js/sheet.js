@@ -22,7 +22,7 @@ $('#send').click(function()
                 "name": $('#name').val(),
                 "message": $('#message').val()
             } ,
-            success: alert("success") ,
+            success: alert("謝謝你的樹！") ,
         });
     }
 
