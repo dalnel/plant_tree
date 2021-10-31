@@ -30,7 +30,7 @@ async function g() {
 
   return new Promise(function (resolve) {
     let array = [b, gold, red, green]
-    console.log(array);
+    //console.log(array);
     resolve(array);
   })
 }
@@ -40,9 +40,23 @@ function farm() {
     let pro = g(); 
     pro.then(function (re) {
       let a = re[1] + re[2] + re[3];
-      console.log("all:" + a);
+      var b = [];
+      //console.log("all:" + a);
       counter(re[0]);
-      tree(a);
+      for(let i = 1; i <= re[1]; i++)
+      {
+        b.push(1);
+      }
+      for(let i = 1; i <= re[2]; i++)
+      {
+        b.push(2);
+      }
+      for(let i = 1; i <= re[3]; i++)
+      {
+        b.push(3);
+      }
+      console.log(b);
+      tree(a,b);
     })
   }
   
@@ -74,15 +88,15 @@ function farm() {
 
   }
 
-  function tree(a){
+  function tree(a,b){
     $('.tree').html("");
     let arrary = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
     for(let i = 1; i <= a; i++)
     {
-	    var x = Math.floor(Math.random()*2)+2; //init +1
+	    var x = Math.floor(Math.random()*2); //init +1
       var y = Math.floor(Math.random() * arrary.length);
 	    var back = `<div id="t_${arrary[y]}" class="tree_item" >
-					        <img class="tree_pitcher" src="./img/tree${x}.png">
+					        <img class="tree_pitcher" src="./img/tree${b[i - 1]}.png">
 				          </div>`;
 	    $('.tree').append(back);
       arrary.splice(y, 1);
@@ -93,4 +107,4 @@ function farm() {
   $( document ).ready(function(){
       farm();
   })
- setInterval(farm, 30000); 
+ //setInterval(farm, 30000); 

@@ -1,0 +1,13 @@
+
+.d{
+    background-image: url("../img/backimg.jpg");
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	/* background-position: center; */
+	/* background-size: cover; */
+	max-width: 1200px;
+    height: 8001px;
+/* 	width: 100%;
+	background-color: #FFECDC;
+	margin: auto;    */
+}
