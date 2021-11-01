@@ -43,6 +43,14 @@ function farm() {
       var b = [];
       //console.log("all:" + a);
       counter(re[0]);
+
+      if(re[1] * 100 >= 10000)
+      {
+        $('#go').toggleClass("active");
+        $('#1w').toggleClass("active");
+      }
+
+
       for(let i = 1; i <= re[1]; i++)
       {
         b.push(1);
@@ -55,7 +63,7 @@ function farm() {
       {
         b.push(3);
       }
-      console.log(b);
+      //console.log(b);
       tree(a,b);
     })
   }
@@ -72,7 +80,7 @@ function farm() {
     },
   
     {  
-      duration: 1000,
+      duration: 3000,
       easing:'linear',
       step: function() {
         $this.text(Math.floor(this.countNum));
@@ -107,4 +115,4 @@ function farm() {
   $( document ).ready(function(){
       farm();
   })
- //setInterval(farm, 30000); 
+ setInterval(farm, 30000); 

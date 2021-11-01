@@ -1,23 +1,105 @@
-<!DOCTYPE html>
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Plant Tree V2</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/PlantTreeButton.css">
     <script id="applicationScript" type="text/javascript" src="./js/counter.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/background.css"   
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <style>
+
+        .list{
+            display: flex;
+            justify-content: center;
+        }
+
+        .list li{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            background-color: gainsboro;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px rgb(247, 0, 255);
+        }
+
+        .label{
+            position: absolute;
+            top: calc(100% + 15px);
+            left: 30%;
+            color: hotpink;
+        }
+
+        .list li + li{
+            margin-left: 50px;
+        }
+
+        .list li + li::before{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 5px;
+            z-index: -1;
+            background-color: rgb(0, 0, 0);
+            top: 0;
+            bottom: 0;
+            left: -50px;
+            margin: auto;
+            box-shadow: 0px 0px 5px rgb(255, 0, 0);
+
+        }
+
+        .list li.active ~ li{
+            background-color: rgb(0, 81, 255);
+
+        }
+
+        .list li.active ~ li::before{
+            background-color: rgb(44, 243, 18);
+
+        }
+
+        .list li.active ~ li .label{
+            color: lawngreen;
+
+        }
+
+
+
+
+    </style>
+
+
+
+
+
 </head>
 
 <body>
+    <ul class="list">
+        <li>
+            1萬
+            <div class="label">達成</div>
+        </li>
+        
+        <li class="active">
+            10萬
+            <div class="label">達成</div>
+        </li>
+        
+        <li>
+            100萬
+            <div class="label">達成</div>
+        </li>
+        
+        <li>
+            1000萬
+            <div class="label">達成</div>
+        </li>
+        
 
-<div class="d">
-    
-</div>
+    </ul>
+
 
 
 

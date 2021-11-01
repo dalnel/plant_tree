@@ -25,5 +25,4 @@ $('#send').click(function()
             success: alert("謝謝你的樹！") ,
         });
     }
-
 });

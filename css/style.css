@@ -3,170 +3,103 @@
 	src: url('../genseki-font-master/ttc/GenSekiGothicTW-L.ttf') ;
   }
 
-.title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-}
-
-.hidden {
-  display: none;
-}
-
-.opaque {
-  opacity: 0;
-  transition: 0.3s ease;
-}
-
-.disabled {
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-}
-
-#check{
-  position: relative;
-  margin:40px auto;
-  max-width: 630px;
-}
-
-#checkout-progress {
-  width: 100%;
-  height: 150px;
-  margin-left: 1px;
-  font-size: 1.5em;
-  font-weight: 900;
-
-  position: relative;
-}
-@media (max-width: 767px) {
-  #checkout-progress {
-    font-size: 1.5em;
-    width: 90%;
-    margin: auto;
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
+
+  .list{
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
 }
-#checkout-progress:before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 35%;
-  height: 20px;
-  width: 100%;
-  background-color: #ccc;
-  transform: translateY(-50%) perspective(1000px);
+
+.list li{
+    position: relative;
+    font-family:sans-serif;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    /* z-index: 9; */
+    border-radius: 50%;
+    background-color: #42210B;
+    border: 2px solid #fff;
+    box-shadow:  0 0 0 5px #42210B;
+    color: #fff;
+    font-size: 20px;
 }
-#checkout-progress:after {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 35%;
-  height: 20px;
-  width: 100%;
-  background-color: #2C3E50;
-  transform: scaleX(0) translateY(-50%) perspective(1000px);
-  transform-origin: left center;
-  transition: transform 0.5s ease;
+
+.list li + li{
+    margin-left: 50px;
 }
-#checkout-progress.step-2:after {
-  transform: scaleX(0.333) translateY(-50%) perspective(1000px);
+
+.list li + li::before{
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 5px;
+    z-index: -1;
+    background-color: #42210B;
+    top: 0;
+    bottom: 0;
+    left: -50px;
+    margin: auto;
+
 }
-#checkout-progress.step-3:after {
-  transform: scaleX(0.666) translateY(-50%) perspective(1000px);
-}
-#checkout-progress.step-4:after {
-  transform: scaleX(1) translateY(-50%) perspective(1000px);
-}
-#checkout-progress.step-5:after {
-  transform: scaleX(1) translateY(-50%) perspective(1000px);
-}
-#checkout-progress .progress-bar {
-  width: 100%;
-  display: flex;
-  height: 100px;
-  justify-content: space-between;
-  align-items: center;
-}
-#checkout-progress .progress-bar .step {
-  z-index: 2;
-  position: relative;
-}
-#checkout-progress .progress-bar .step .step-label {
+
+.label{
   position: absolute;
   top: calc(100% + 15px);
-  left: 50%;
-  transform: translateX(-50%) perspective(1000px);
-  white-space: nowrap;
-  font-size: 0.4em;
-  font-weight: 600;
-  color: #ccc;
-  transition: 0.3s ease;
+  left: 30%;
+  color: #42210B;
 }
-@media (max-width: 767px) {
-  #checkout-progress .progress-bar .step .step-label {
-    top: calc(100% + 15px);
+
+.list li.active ~ li{
+  /* z-index: 0; */
+  background-color: #C6C6C6;
+  box-shadow:  0 0 0 5px #C6C6C6;
+  border: 2px solid #fff;
+
+}
+
+.list li.active ~ li::before{
+  /* z-index: -1; */
+  background-color: #C6C6C6;
+
+}
+
+.list li.active ~ li .label{
+    color: #C6C6C6;
+
+}
+
+
+@media screen and (max-width: 414px){
+
+  .list{
+    width: 100%;
+    height: 30px;
   }
-}
-#checkout-progress .progress-bar .step span {
-  color: #ccc;
-  transition: 0.3s ease;
-  display: block;
-  transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
-}
-#checkout-progress .progress-bar .step .fa-check {
-  color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transition: transform 0.3s ease;
-  transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
-}
-#checkout-progress .progress-bar .step.active span, #checkout-progress .progress-bar .step.active .step-label {
-  color: #2C3E50;
-}
-#checkout-progress .progress-bar .step.valid .fa-check {
-  transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
-}
-#checkout-progress .progress-bar .step.valid span {
-  color: #2C3E50;
-  transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
-}
-#checkout-progress .progress-bar .step.valid .step-label {
-  color: #2C3E50 !important;
-}
-#checkout-progress .progress-bar .step:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) perspective(1000px);
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  border-radius: 50%;
-  border: 5px solid #ccc;
-  transition: 0.3s ease;
-}
-@media (max-width: 767px) {
-  #checkout-progress .progress-bar .step:after {
-    width: 40px;
-    height: 40px;
+
+  .list li{
+    margin: 0 10px;
+    width: 100%;
+    height: 200%;
+    font-size: 15px;
   }
-}
-#checkout-progress .progress-bar .step.active:after {
-  border: 5px solid #2C3E50;
-}
-#checkout-progress .progress-bar .step.valid:after {
-  background-color: #2C3E50;
-  border: 5px solid #2C3E50;
+  
+  .list li + li{
+    margin-left: 10px;
+  } 
+
+  .label{
+    left: 25%;
+  }
+
 }
 
 
