@@ -11,7 +11,7 @@ $('#send').click(function()
 
     if($('#number').val() == "" || $('#name').val() == "" )
     {
-        alert("姓名及今天要種多少樹為必填選項");
+        alert("姓名及今天吃了多少素為必填選項");
     }
     else{
         $.ajax({
